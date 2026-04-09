@@ -1,5 +1,4 @@
 version := `cargo metadata --no-deps --format-version 1 | python3 -c "import sys,json; print(json.load(sys.stdin)['packages'][0]['version'])"`
-targets := "x86_64-unknown-linux-gnu x86_64-pc-windows-gnu"
 
 build:
     cargo clean
